@@ -87,6 +87,7 @@
     <None Include="packages.config" />
     <None Include="ShoppingEntity.edmx.diagram">
       <DependentUpon>ShoppingEntity.edmx</DependentUpon>
+      <SubType>Designer</SubType>
     </None>
   </ItemGroup>
   <ItemGroup>

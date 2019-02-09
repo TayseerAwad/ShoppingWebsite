@@ -13,15 +13,6 @@ namespace ShoppingCart {
     public partial class Product_details {
         
         /// <summary>
-        /// gv1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView gv1;
-        
-        /// <summary>
         /// lbl1 control.
         /// </summary>
         /// <remarks>

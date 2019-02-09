@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/ShoppinCartMaster.Master" AutoEventWireup="true" CodeBehind="Products.aspx.cs" Inherits="ShoppingCart.Products" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
      <img src="images/line2r.jpg" alt="" width="651" height="1" class="line2r" />
-    <a class="text3"><strong>المنتجات</strong></a>
+    <a class="text3"><strong>Products</strong></a>
    <asp:DataList ID="dtProducts" runat="server" RepeatDirection="Vertical" RepeatColumns="4">
             <ItemTemplate>
                 <div class="item border">

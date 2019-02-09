@@ -3,73 +3,73 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>معرض للهاتف الجوال</title>
-
-<meta http-equiv="Content-Type" content="text/html; charset="windows-1251" />
-<link type="text/css" rel="stylesheet" href="style.css" />
+   
+    <title>Online Store</title>
+    <meta http-equiv="Content-Type" content="text/html;" />
+    <%--<meta name="viewport" />--%>
+    <link type="text/css" rel="stylesheet" href="style.css" />
+    
+                                         
 </head>
-
 <body runat="server">
 
-<form id="form1" runat="server">
+    <form id="form1" runat="server">
 
 
 
-	<table class="table1" cellspacing="0" cellpadding="0">
-	  <tr>
-		<td>
-			<img src="images/line1.jpg" alt="" width="1000" height="8" />
-		</td>
-	  </tr>
-	  <tr>
-		<td>
-			<table class="table2" cellspacing="0" cellpadding="0">
-			  <tr>
-				<td>
-					<table cellspacing="0" cellpadding="0">
-					  <tr>
-						<td>
-							<a href="#"><img src="images/Mobile-store.jpg" alt="" width="272" height="68" class="img" /></a>
-						</td>
-						<td class="header">
-							<p class="text1">
-								<span class="text2">العملة:</span>
-								<select>
-									<option>بالدولار</option>
-									<option>يورو</option>
-								
-								</select>
-								
-							</p>
-							
-							
-                    
-                    
-							<a href="#"><img src="images/icon1.jpg" alt="" width="18" height="12" class="icon" /></a>
-							<a href="#"><img src="images/icon2.jpg" alt="" width="18" height="12" class="icon" /></a>
-							<a href="#"><img src="images/icon3.jpg" alt="" width="18" height="12" class="icon" /></a>
-						</td>
-					  </tr>
-					</table>
+        <table class="table1" cellspacing="0" cellpadding="0">
+            <tr>
+                <td>
+                    <img src="images/line1.jpg" alt="" width="1000" height="8" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table class="table2" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td>
+                                <table cellspacing="0" cellpadding="0">
+                                    <tr>
+                                        <td>
+                                            <a href="#">
+                                                <img src="images/Mobile-store.jpg" alt="" width="272" height="68" class="img" /></a>
+                                        </td>
+                                        <td class="header">
+                                            <p class="text1">
+                                                <span class="text2">Currency:</span>
+                                                <select>
+                                                    <option>Dollar</option>
 
-				</td>
-			  </tr>
-			  <tr>
-			  	<td>
-					<img src="images/line2.jpg" alt="" width="940" height="1" class="line2_h" />
-				</td>
-			  </tr>
-			  <tr>
-				<td class="menu">                                                                                                                                                                                                                                                                                                                                                                                                                                          <div class="inner_copy"><a href="http://www.freeflashtemplates.ws">free flash templates</a><a href="http://www.freewebsitetemplates.ws">free website templates</a></div>                                                                           
-					
-					<ul id="menu">
-						<li class="active"><a href="#">الرئيسية</a></li>
-						<li><a href="#">الجديد</a></li>
-						<li><a href="#">خاصة</a></li>
-						<li><a href="#">حسابي</a></li>
-						<li><a href="#">اتصل بنا</a></li>
-				  	</ul>
-							<div id="search">
+
+                                                </select>
+
+                                            </p>
+
+
+
+
+                                            <a href="#">
+                                                <img src="images/icon1.jpg" alt="" width="18" height="12" class="icon" /></a>
+                                            <a href="#">
+                                                <img src="images/icon2.jpg" alt="" width="18" height="12" class="icon" /></a>
+                                            <a href="#">
+                                                <img src="images/icon3.jpg" alt="" width="18" height="12" class="icon" /></a>
+                                        </td>
+                                    </tr>
+                                </table>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="menu">
+                                
+
+                                <ul id="menu">
+                                    <li class="active"><a href="Home.aspx">Main</a></li>
+                                    <li><a href="cart.aspx">Cart</a></li>
+                                    <li><a href="#">Contact Us</a></li>
+                                </ul>
+                                <div id="search">
 								<form action="#"> 
 									<input type="text"  class="search_input" />
 									<input type="submit" value="" class="search" />
@@ -89,15 +89,58 @@
 					  <tr>
 						<td>
 							<ul id="links">
-								<li><a href="#">سعر جيد</a></li>
-								<li class="bg"><a href="#">لون جذاب</a></li>
-								<li><a href="#">سوفت وير</a></li>
-								<li class="bg"><a href="#">خطط الاسعار</a></li>
 								
 						  	</ul>
 						</td>
 						<td>
-							<a href="#"><img src="images/img.jpg" alt="" width="651" height="215" class="img2" /></a>
+							
+
+                                            <div class="mySlides fade">
+                                                <div class="numbertext">1 / 3</div>
+                                                <img src="images/iphone1.jpg" style="vertical-align: middle" width="800" height="250">
+                                            </div>
+
+                                            <div class="mySlides fade">
+                                                <div class="numbertext">2 / 3</div>
+                                                <img src="images/iphone 5s.jpg" style="vertical-align: middle" width="800" height="250">
+                                            </div>
+
+                                            <div class="mySlides fade">
+                                                <div class="numbertext">3 / 3</div>
+                                                <img src="images/samsung.jpg" style="vertical-align: middle" width="800" height="250">
+                                            </div>
+
+
+                                            <br>
+
+                                            <div style="text-align: center">
+                                                <span class="dot"></span>
+                                                <span class="dot"></span>
+                                                <span class="dot"></span>
+                                            </div>
+
+                                               <script>
+                                                var slideIndex = 0;
+                                                showSlides();
+
+                                                function showSlides() {
+                                                    var i;
+                                                    var slides = document.getElementsByClassName("mySlides");
+                                                    var dots = document.getElementsByClassName("dot");
+                                                    for (i = 0; i < slides.length; i++) {
+                                                        slides[i].style.display = "none";
+                                                    }
+                                                    slideIndex++;
+                                                    if (slideIndex > slides.length) { slideIndex = 1 }
+                                                    for (i = 0; i < dots.length; i++) {
+                                                        dots[i].className = dots[i].className.replace(" active", "");
+                                                    }
+                                                    slides[slideIndex - 1].style.display = "block";
+                                                    dots[slideIndex - 1].className += " active";
+                                                    setTimeout(showSlides, 2000); // Change image every 2 seconds
+                                                }
+                                            </script>
+                                            
 						</td>
 					  </tr>
 					  <tr style="vertical-align:top">
@@ -106,7 +149,7 @@
 						
 							<img src="images/line2l.jpg" alt="" width="283" height="1" class="line2l" />
 							 
-							<a class="text3"><strong>فئات الجوال</strong></a>
+							<a class="text3"><strong>Brands</strong></a>
 							<img src="images/line2l.jpg" alt="" width="283" height="1" class="line2l" />
 							<ul id="links2" runat="server">
 							
@@ -172,3 +215,4 @@
 
 </body>
 </html>
+

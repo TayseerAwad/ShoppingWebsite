@@ -2,52 +2,25 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-<asp:GridView ID="gv1" runat="server" AutoGenerateColumns="false" ShowFooter="true" DataKeyNames="prodId" BackColor="#CCFFFF" OnRowDeleting="gv1_RowDeleting" FooterText="Total">
-        <Columns>
-            <asp:TemplateField HeaderText="ID" FooterText="Total">
-                <ItemTemplate>
-                    <asp:Label ID="lblID" runat="server" Text='<%# Eval("prodId")%>'></asp:Label>
-                </ItemTemplate>
-               
-            </asp:TemplateField>
-            <asp:TemplateField HeaderText="Item Name">
-                <ItemTemplate>
-                    <asp:Label ID="lblName" runat="server" Text='<%# Eval("prodName")%>'></asp:Label>
-                </ItemTemplate>
-            </asp:TemplateField>
-            <asp:TemplateField HeaderText="Item Price" >
-                <ItemTemplate>
-                 <%# unitprice(decimal.Parse(Eval("prodPrice").ToString())) %>
-                </ItemTemplate>
-               <FooterTemplate >
-                     <%# gettotalprice() %>
-                </FooterTemplate>
-                
-            </asp:TemplateField>
-            <asp:TemplateField>
-                <ItemTemplate>
-            <asp:LinkButton ID="lnlDel" CommandName="Delete" runat="server">Delete</asp:LinkButton>
-                    </ItemTemplate>
-            </asp:TemplateField>
-        </Columns>
-        <FooterStyle BackColor="#99CCFF"  />
-    </asp:GridView>
+    <link type="text/css" rel="stylesheet" href="style.css" />
     
-    <table style="width: 75%">
-        <tr>
+    <table cellspacing="13" style="width: 75%">
+        <tr class="tr">
             <td>
-                <asp:Label ID="lbl1" runat="server" Text="Device Name"></asp:Label></td>
+                <asp:Label ID="lbl1" runat="server" Text="Device Name" CssClass="td"></asp:Label></td>
             <td>
                 <asp:Label ID="LblName" runat="server" Text="Label"></asp:Label></td>
         </tr>
-        <tr>
-            <td>
+
+        <tr class="tr">
+            <td class="td">
                 <asp:Label ID="lbl2" runat="server" Text="Device Description"></asp:Label></td>
             <td>
                 <asp:Label ID="LblDescription" runat="server" Text="Label"></asp:Label></td>
         </tr>
-        <tr>
-            <td>
+
+        <tr class="tr">
+            <td class="td">
                 <asp:Label ID="lbl3" runat="server" Text="Device Price"></asp:Label></td>
             <td>
                 <asp:Label ID="LblPrice" runat="server" Text="Label"></asp:Label></td>

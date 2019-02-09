@@ -76,6 +76,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="cart.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Home.aspx" />
     <Content Include="images\bg1.jpg" />
@@ -94,6 +95,8 @@
     <Content Include="images\img7.jpg" />
     <Content Include="images\img8.jpg" />
     <Content Include="images\input.jpg" />
+    <Content Include="images\iphone 5s.jpg" />
+    <Content Include="images\iphone1.jpg" />
     <Content Include="images\line1.jpg" />
     <Content Include="images\line2.jpg" />
     <Content Include="images\line2l.jpg" />
@@ -102,16 +105,29 @@
     <Content Include="images\line_h.jpg" />
     <Content Include="images\line_m.jpg" />
     <Content Include="images\Mobile-store.jpg" />
+    <Content Include="images\samsung.jpg" />
     <Content Include="images\spacer.gif" />
     <Content Include="img\img1.jpg" />
     <Content Include="img\img2.jpg" />
     <Content Include="img\img3.jpg" />
+    <Content Include="img\img4.jpg" />
+    <Content Include="img\img5.jpg" />
+    <Content Include="img\img6.jpg" />
+    <Content Include="img\img7.jpg" />
+    <Content Include="img\img8.jpg" />
     <Content Include="Products.aspx" />
     <Content Include="Product_details.aspx" />
     <Content Include="style.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="cart.aspx.cs">
+      <DependentUpon>cart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cart.aspx.designer.cs">
+      <DependentUpon>cart.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>

@@ -11,7 +11,7 @@ namespace ShoppingCart
     public partial class Product_details : System.Web.UI.Page
     {
         ClassLibrary2.ShoppingEntities cont = new ClassLibrary2.ShoppingEntities();
-        
+
         DataTable dt = new DataTable();
         DataRow dr;
         protected void Page_Load(object sender, EventArgs e)
@@ -44,65 +44,59 @@ namespace ShoppingCart
             string Name = LblName.Text;
             int Id = Convert.ToInt32(Request.QueryString["id"]);
             int price = Convert.ToInt32(LblPrice.Text);
-            datatable(Id, price, Name);
+            datatable(Id, price, Name, out bool check);
 
-        }
-
-        
-        void datatable(int Id, int price,string Name)
-        {
-            if(Session["datatable"]==null)
+            if(check==true)
             {
-                dt.Columns.Add("prodId", System.Type.GetType("System.Int32"));
-                dt.Columns.Add("prodPrice", System.Type.GetType("System.Int32"));
-                dt.Columns.Add("prodName");
-                dr = dt.NewRow();
-                dr[0]= Id;
-                dr[1]= price;
-                dr[2] = Name;
-
-                dt.Rows.Add(dr);
-               Session["datatable"]=dt;
-            }
-
-            else
-            {
-                dt = (DataTable)(Session["datatable"]);
-                dr = dt.NewRow();
-                dr = dt.NewRow();
-                dr[0] = Id;
-                dr[1] = price;
-                dr[2] = Name;
-                dt.Rows.Add(dr);
-
-            }
-            Session["datatable"] = dt;
-            gv1.DataSource = dt;
-            gv1.DataBind();
-        }
-
-        public decimal totalprice;
-        protected decimal unitprice(decimal price)
-        {
-            totalprice += price;
-            return price;
-        }
-
-        protected decimal gettotalprice()
-        {
-                return totalprice;
+                string cstype = "";
                 
+                ClientScript.RegisterStartupScript(cstype.GetType(), "myalert", "alert('" +"your item has been added to the cart "+"');", true);
+            }
+
         }
 
-      
 
-        protected void gv1_RowDeleting(object sender, GridViewDeleteEventArgs e)
+        void datatable(int Id, int price, string Name, out bool check)
         {
-            DataTable dts;
-            dts = Session["datatable"] as DataTable;
-            dts.Rows[e.RowIndex].Delete();
-            gv1.DataSource = dts;
-            gv1.DataBind();
+            try
+            {
+                if (Session["datatable"] == null)
+                {
+                    dt.Columns.Add("prodId", System.Type.GetType("System.Int32"));
+                    dt.Columns.Add("prodPrice", System.Type.GetType("System.Int32"));
+                    dt.Columns.Add("prodName");
+                    dr = dt.NewRow();
+                    dr[0] = Id;
+                    dr[1] = price;
+                    dr[2] = Name;
+
+                    dt.Rows.Add(dr);
+                    Session["datatable"] = dt;
+                    check = true;
+                }
+
+                else
+                {
+                    dt = (DataTable)(Session["datatable"]);
+                    dr = dt.NewRow();
+                    dr = dt.NewRow();
+                    dr[0] = Id;
+                    dr[1] = price;
+                    dr[2] = Name;
+                    dt.Rows.Add(dr);
+                    check = true;
+
+                }
+                Session["datatable"] = dt;
+            }
+            
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                check = false;
+            }
         }
+
+       
     }
 }

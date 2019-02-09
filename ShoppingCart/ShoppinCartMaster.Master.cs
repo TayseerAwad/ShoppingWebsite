@@ -5,11 +5,15 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
+
+
 namespace ShoppingCart
 {
+
     public partial class ShoppinCartMaster : System.Web.UI.MasterPage
     {
         protected void Page_Load(object sender, EventArgs e)
+
         {
             fill();
         }
@@ -26,5 +30,8 @@ namespace ShoppingCart
             links2.InnerHtml = category;
             
         }
+
+       
+        public double CellSpacing { get; set; }
     }
 }
