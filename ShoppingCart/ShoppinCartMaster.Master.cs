@@ -28,8 +28,7 @@ namespace ShoppingCart
                 category += "<li><a href=\"Products.aspx?id=" + items.cate_id + "\">" + items.cate_name.ToString() + "</a></li>";
             }
             links2.InnerHtml = category;
-            
-        }
+            //Test
 
        
         public double CellSpacing { get; set; }
