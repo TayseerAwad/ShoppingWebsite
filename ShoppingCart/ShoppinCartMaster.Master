@@ -9,7 +9,7 @@
     <%--<meta name="viewport" />--%>
     <link type="text/css" rel="stylesheet" href="style.css" />
     
-                                 <%--testkc--%>        
+                            
 </head>
 <body runat="server">
 
